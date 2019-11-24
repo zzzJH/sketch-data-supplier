@@ -1,0 +1,24 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData": true,
+  "commands": [
+    {
+      "script": "my-command.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "SupplyDataName": "onSupplyDataName",
+          "SupplyDataPhone": "onSupplyDataPhone",
+          "SupplyDataEmail": "onSupplyDataEmail",
+          "SupplyDataAddress": "onSupplyDataAddress"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "sketch-data-supplier"
+  }
+}

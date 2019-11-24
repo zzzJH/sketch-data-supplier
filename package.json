@@ -1,0 +1,29 @@
+{
+  "name": "sketch-data-supplier",
+  "version": "0.1.0",
+  "description": "A DataSupplier plugin",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "sketch-data-supplier",
+    "manifest": "src/manifest.json",
+    "main": "sketch-data-supplier.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "author": "zhongjiahao <zhongjh1994@gmail.com>",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
